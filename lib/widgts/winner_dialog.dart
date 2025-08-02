@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 void showWinnersDialog(BuildContext context, List<String> winners) {
   const themeColor = Color(0xFFec0a86);
+
+  // Save winners to Firebase Firestore asynchronously, without blocking the dialog.
+  // This won't delay showing the dialog.
+  FirebaseFirestore.instance.collection('winners').add({
+    'winners': winners,
+    'timestamp': DateTime.now(),
+  });
 
   showDialog(
     context: context,

@@ -1,12 +1,13 @@
-// 📁 lib/main.dart
 import 'package:flutter/material.dart';
-import 'dart:math';
-import 'dart:io';
-import 'package:file_picker/file_picker.dart';
-import 'package:manola_lottery_app/winner_dialog.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 import 'app.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const ManolaApp());
 }
