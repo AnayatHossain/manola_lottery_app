@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "811512941165",
+    "project_id": "manola-lottery-app-f5be4",
+    "storage_bucket": "manola-lottery-app-f5be4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811512941165:android:d4dc8208db09425cc1cd64",
+        "android_client_info": {
+          "package_name": "com.manola.manola_lottery_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBICzzp0R_pyrbXBV4dVF9D893BmiDHrYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
